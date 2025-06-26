@@ -8,7 +8,7 @@ export const birdsApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: endpoints.baseUrl,
     prepareHeaders: (headers) => {
-      headers.set('API-KEY', process.env.REACT_APP_API_KEY || '')
+      headers.set('API-KEY', import.meta.env.VITE_API_KEY || '')
       return headers
     },
   }),

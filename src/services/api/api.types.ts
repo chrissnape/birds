@@ -6,7 +6,8 @@ export type GetBirdsQueryParams = {
 }
 
 export type GetBirdsResponse = {
+  entities: Bird[];
   page: number;
   pageSize: number;
-  entities: Bird[];
+  total: number;
 }
